@@ -21,7 +21,8 @@ config.output = {
 config.module.loaders.push(
   { test: /\.jsx$/, loaders: ["jsx?harmony"] },
   { test: /\.css$/, loader: "style!css" },
-  // { test: /\.scss$/, loader: "style!css!sass?outputStyle=expanded&includePaths[]=" + path.resolve(__dirname, "./assets/stylesheets")},
+  { test: /\.cjsx$/, loaders: ["coffee-jsx?harmony"] },
+  { test: /\.coffee$/, loaders: ["coffee"] },
 
   { test: /\.png$/, loader: "url-loader?limit=100000&mimetype=image/png" },
   { test: /\.jpg$/, loader: "file-loader" },

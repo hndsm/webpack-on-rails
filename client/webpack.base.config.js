@@ -24,7 +24,10 @@ module.exports = {
       ".webpack.js",
       ".web.js",
       ".js",
+      ".jsx",
       ".css",
+      ".coffee",
+      ".cjsx",
       "config.js"
     ]
   },
